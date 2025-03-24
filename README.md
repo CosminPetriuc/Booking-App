@@ -39,43 +39,43 @@ The AI-Powered Booking System is a full-stack web application designed to stream
 </p>
 
 ---
-## 👥 Contributors 
+## 👥 Contributors  
 
 Thanks to these amazing people who helped build this project!  
 
 <table>
   <tr>
     <td align="center">
-      <a href="[https://github.com/contributor1](https://github.com/wasy2023)">
-        <img src="https://github.com/contributor1.png" width="100px;" alt="wasy2023"/>
+      <a href="https://github.com/wasy2023">
+        <img src="https://github.com/wasy2023.png" width="100px;" alt="wasy2023"/>
         <br />
         <sub><b>wasy2023</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="[https://github.com/contributor2](https://github.com/NeaguGeorgianaTeodora)">
-        <img src="https://github.com/contributor2.png" width="100px;" alt="NeaguGeorgianaTeodora"/>
+      <a href="https://github.com/NeaguGeorgianaTeodora">
+        <img src="https://github.com/NeaguGeorgianaTeodora.png" width="100px;" alt="NeaguGeorgianaTeodora"/>
         <br />
         <sub><b>NeaguGeorgianaTeodora</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="[https://github.com/contributor3](https://github.com/andrapavel)">
-        <img src="https://github.com/contributor3.png" width="100px;" alt="andrapavel"/>
+      <a href="https://github.com/andrapavel">
+        <img src="https://github.com/andrapavel.png" width="100px;" alt="andrapavel"/>
         <br />
         <sub><b>andrapavel</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="[https://github.com/contributor4](https://github.com/sorana134)">
-        <img src="https://github.com/contributor4.png" width="100px;" alt="sorana134"/>
+      <a href="https://github.com/sorana134">
+        <img src="https://github.com/sorana134.png" width="100px;" alt="sorana134"/>
         <br />
         <sub><b>sorana134</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="[https://github.com/contributor5](https://github.com/Azeks0)">
-        <img src="https://github.com/contributor5.png" width="100px;" alt="Azeks0"/>
+      <a href="https://github.com/Azeks0">
+        <img src="https://github.com/Azeks0.png" width="100px;" alt="Azeks0"/>
         <br />
         <sub><b>Azeks0</b></sub>
       </a>
