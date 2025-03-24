@@ -46,6 +46,13 @@ Thanks to these amazing people who helped build this project!
 <table>
   <tr>
     <td align="center">
+      <a href="https://github.com/CosminPetriuc">
+        <img src="https://github.com/CosminPetriuc.png" width="100px;" alt="CosminPetriuc"/>
+        <br />
+        <sub><b>CosminPetriuc</b></sub>
+      </a>
+    </td>
+    <td align="center">
       <a href="https://github.com/wasy2023">
         <img src="https://github.com/wasy2023.png" width="100px;" alt="wasy2023"/>
         <br />
