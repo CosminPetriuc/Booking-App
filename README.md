@@ -27,8 +27,7 @@ The AI-Powered Booking System is a full-stack web application designed to stream
 ## 📸 Screenshots  
 
 <p align="center">
-  <img src="![Screenshot 2025-03-24 210233](https://github.com/user-attachments/assets/3c1aae03-19ef-4155-85fb-2a4277390131)
-" alt="Screenshot 1" width="30%">
+  <img src="1.png" alt="Screenshot 1" width="30%">
   <img src="![image](https://github.com/user-attachments/assets/eb11e7c7-3db5-4876-aad3-5773b870cf5c)
 " alt="Screenshot 2" width="30%">
   <img src="images/screenshot3.png" alt="Screenshot 3" width="30%">
