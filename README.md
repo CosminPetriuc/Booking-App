@@ -37,3 +37,48 @@ The AI-Powered Booking System is a full-stack web application designed to stream
   <img src="images/5.png" alt="Screenshot 5" width="30%">
   <img src="images/6.png" alt="Screenshot 6" width="30%">
 </p>
+
+---
+## 👥 Contributors 
+
+Thanks to these amazing people who helped build this project!  
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="[https://github.com/contributor1](https://github.com/wasy2023)">
+        <img src="https://github.com/contributor1.png" width="100px;" alt="Contributor 1"/>
+        <br />
+        <sub><b>Vasy</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="[https://github.com/contributor2](https://github.com/NeaguGeorgianaTeodora)">
+        <img src="https://github.com/contributor2.png" width="100px;" alt="Contributor 2"/>
+        <br />
+        <sub><b>Georgiana</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="[https://github.com/contributor3](https://github.com/andrapavel)">
+        <img src="https://github.com/contributor3.png" width="100px;" alt="Contributor 3"/>
+        <br />
+        <sub><b>Andra</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="[https://github.com/contributor4](https://github.com/sorana134)">
+        <img src="https://github.com/contributor4.png" width="100px;" alt="Contributor 4"/>
+        <br />
+        <sub><b>Sorana</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="[https://github.com/contributor5](https://github.com/Azeks0)">
+        <img src="https://github.com/contributor5.png" width="100px;" alt="Contributor 5"/>
+        <br />
+        <sub><b>Azeks0</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
