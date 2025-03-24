@@ -1,0 +1,44 @@
+.map-component {
+  position: relative;
+  flex: 2; /* Map occupies 2/3 of the available space */
+  height: 100%;
+  background-image: url('../../../assets/mapa.jpg')!important;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent overflowing content */
+}
+
+.city-buttons {
+  position: absolute;
+
+  left: 2%; /* Align buttons to the left side */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between buttons */
+  z-index: 2; /* Ensure buttons appear above the map */
+}
+
+.city-button {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-weight: bold;
+}
+
+.city-button:hover {
+  background-color: #f0f0f0; /* Slightly darker on hover */
+}
+
+.city-button:active {
+  transform: scale(0.95); /* Button click effect */
+}

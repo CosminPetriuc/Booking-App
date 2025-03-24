@@ -1,0 +1,172 @@
+
+.my-bookings-page {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100vh; 
+  background: #ffffff;
+}
+
+
+/*.my-bookings-page .menu-bar {
+  background: #d9d9d9;
+  height: 75%;
+  width: 6vw;
+  margin: 0;
+  border-radius: 0 25px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+}*/
+
+
+.background-rectangle {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 8%;
+  border-radius: 25px;
+  background: linear-gradient(
+    122.52deg,
+    #f9c6f4 0%,
+    #fce2f9 60.78%,
+    rgba(248, 230, 247, 0.85) 100%
+  );
+  backdrop-filter: blur(4px);
+  z-index: 0;
+}
+
+
+.background-rectangle .app-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+
+.background-rectangle .app-header .icon {
+  position: relative;   
+  width: 60px;    
+  left:20px;  
+  top:25px;    
+  height: 60px;
+  background-color: rgba(204, 104, 225, 0.4); 
+  border-radius: 50%;
+  margin-right: 10px;
+  
+  display: flex;        
+  justify-content: center;
+  align-items: center;
+}
+
+
+.background-rectangle .app-header .icon .inner-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #cc68e1; 
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.background-rectangle .app-header .icon .inner-circle .inner-icon {
+  width: 20px; 
+  height: 20px;
+  object-fit: contain;
+  
+     
+}
+
+
+.background-rectangle .app-header .app-name {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  left:20px;  
+  top:25px; 
+  position: relative;
+  line-height: 29px;
+  text-align: left;        
+  color: #8c8c8c;           
+  opacity: 0.9;             
+}
+
+.inside-rectangle {
+  position: relative;
+  top: 160px; 
+  left: 25px;
+  width: calc(100% - 50px);
+  height: calc(100% - 180px);
+
+  border-radius: 30px;
+  background: #FFFFFFB5;
+  ;
+  z-index: 1;
+  
+  
+  overflow: hidden; 
+}
+
+/* Title inside the white overlay */
+
+
+/* The actual scrollable container beneath the title */
+.scroll-container {
+  position: absolute;
+  top: 20px;      
+  left: 0;
+  right: 10px;
+  bottom: 20px;
+  
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding-right: 20px; 
+}
+.my-bookings-title {
+  position: absolute;
+  top: 0; 
+  left: 45%;
+ 
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 2;
+}
+.scroll-container::-webkit-scrollbar {
+  width: 12px;
+  background: transparent; 
+}
+
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #0000006b;
+  border-radius: 50px;
+  margin: 10px 0; 
+}
+
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #ffffffb5;
+  border-radius: 50px;
+}
+
+
+.scroll-container::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+}
+
+

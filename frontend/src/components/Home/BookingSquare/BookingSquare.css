@@ -1,0 +1,159 @@
+.booking-square {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background: linear-gradient(135deg, #ffccff, #ffe6ff);
+    width: 55%;
+    min-width: 260px;
+    height: 50%;
+    min-height: 260px;
+    border-radius: 10px;
+}
+/* Responsive Image Card */
+.image-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3; /* Keeps the rectangle shape */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.image-card .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-card .white-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.4); /* white with transparency */
+    z-index: 1; /* Place it under the image-overlay overlay */
+}
+
+.image-card .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2; /* Place it over the white-overlay */
+}
+
+.image-card .image-text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Icon Styling */
+.image-overlay .icon {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+/* Smaller Rectangle Strip in the Top Right Corner */
+.photo-strip {
+    position: absolute;
+    top: 8%; /* Use percentage for vertical positioning */
+    right: 4%; /* Use percentage for horizontal positioning */
+    display: flex;
+    justify-content: space-between; /* Distributes squares evenly */
+    align-items: center; /* Centers squares vertically */
+    gap: 5%; /* Space between squares, in percentage for responsiveness */
+    width: 27%; /* Width of the strip in percentage of the container */
+    max-width: 200px; /* Maximum width to prevent it from being too wide */
+    height: 10%; /* Height of the strip in percentage */
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+    border-radius: 5px;
+    padding: 5px 10px; /* Padding for aesthetic spacing */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    z-index: 3; /* Highest, so it appears on top */
+}
+
+/* Square containers with photos */
+.photo-square {
+    width: 20%; /* Width relative to the strip */
+    height: 100%; /* Height matches the strip's height */
+    max-width: 32px; /* Maximum width for larger screens */
+    max-height: 32px; /* Maximum height for larger screens */
+    background-color: #d3d3d3; /* Placeholder color */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure positioning for child elements */
+}
+
+/* Overlay for squares without the plus sign */
+.photo-square:hover .squares-overlay {
+    opacity: 0; /* Hide on hover */
+}
+
+/* Image Container */
+.image-container {
+    position: relative; /* Required for positioning the overlay */
+    width: 100%; /* Fill the parent */
+    height: 100%; /* Fill the parent */
+}
+
+/* Images in Squares */
+.image-container img {
+    width: 100%; /* Make the image fill the square */
+    height: 100%; /* Make the image fill the square */
+    object-fit: cover; /* Cover the square without stretching */
+}
+
+/* Overlay for Images */
+.squares-overlay {
+    position: absolute; /* Overlay on top of the image */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-color: rgba(128, 128, 128, 0.5); /* Slightly transparent color */
+    z-index: 1; /* Ensure it is on top of the image */
+    pointer-events: none; /* Allows clicks to go through the overlay */
+}
+
+/* Styles for the Plus Sign Square */
+.plus-sign {
+    opacity: 1 !important; /* Ensure it stays visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2; /* Ensure the plus sign overlay is above other elements */
+}
+
+/* Blur effect only for the square with the plus sign */
+.photo-square:hover .image-container.plus-sign:hover .squares-overlay {
+    backdrop-filter: blur(5px); /* Apply blur to the overlay */
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .booking-square {
+        width: 240px;
+        min-width: 240px;
+    }
+}

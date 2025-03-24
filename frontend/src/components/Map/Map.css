@@ -1,0 +1,88 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the viewport height is respected */
+  overflow: hidden; /* Prevent scrolling on the body */
+}
+
+.map-container {
+  display: flex; /* Use flexbox */
+  width: 100%; /* Take up the full width */
+  height: 100vh; /* 100% of viewport height */
+  flex-direction: row; /* Arrange items horizontally */
+  gap: 5px; /* Space between sections */
+  align-items: center; /* Align items to the top */
+  overflow-y: auto; /* Enable vertical scrolling if items overflow */
+}
+
+.menu-bar-container {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: flex-end; /* Align items to the bottom */
+  align-items: flex-start; /* Align to the left */
+  padding-left: 10px; /* Left padding */
+  gap: 6%; /* Space between items */
+  width: 7%; /* Fixed width for menu bar */
+  height: 88%; /* Set height relative to parent */
+}
+
+.content-container-map {
+  display: flex; /* Arrange child components horizontally */
+  flex-direction: row; /* Ensure horizontal layout */
+  justify-content: space-between; /* Add space between the two components */
+  align-items: flex-start; /* Align items at the top */
+  width: 90%; /* Occupy most of the width */
+  height: 90%; /* Occupy most of the height */
+  padding: 2%; /* Add spacing around content */
+  gap: 2%; /* Space between the map and guest details */
+  box-sizing: border-box;
+  background: linear-gradient(to bottom right, #f9c6f4, #fce2f9, #f8e6f7);
+  border-radius: 10px;
+}
+
+.map-component {
+  flex: 2; /* Map occupies 2/3 of the available space */
+  height: 100% !important;
+  background-color: #e6e6e6; /* Set background color */
+  background-image: url("../../assets/mapa.jpg"); /* Keep the background image */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.guest-details {
+  flex: 1; /* Guest details occupy 1/3 of the available space */
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between elements inside guest details */
+}
+
+.search-button-2 {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.search-button-2:hover {
+  background-color: #45a049;
+}
+
+.search-button-2:active {
+  transform: scale(0.98);
+}

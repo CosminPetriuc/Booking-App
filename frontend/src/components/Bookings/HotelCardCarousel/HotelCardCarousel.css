@@ -1,0 +1,93 @@
+.carousel-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.hotel-card {
+  position: relative;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.hotel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hide the arrows by default */
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0; /* Hide arrows */
+  visibility: hidden; /* Prevent interaction when hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+/* Show the arrows on hover */
+.hotel-card:hover .prev-button,
+.hotel-card:hover .next-button {
+  opacity: 1; /* Make arrows visible */
+  visibility: visible; /* Allow interaction */
+}
+
+.hotel-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.hotel-name {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.hotel-price,
+.hotel-rating {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.carousel-container:hover {
+  overflow-x: scroll; /* Enable horizontal scrolling on hover */
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}
+
+.carousel-container {
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}

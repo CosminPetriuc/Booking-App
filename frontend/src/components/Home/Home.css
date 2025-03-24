@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the viewport height is respected */
+  overflow: hidden; /* Prevent scrolling on the body */
+}
+
+.main-container {
+  display: flex; /* Use flexbox */
+  width: 100%; /* Take up the full width */
+  height: 100vh; /* 100% of viewport height */
+  flex-direction: row; /* Arrange items horizontally */
+  gap: 5px; /* Space between sections */
+  align-items: flex-start; /* Align items to the top */
+  overflow-y: auto; /* Enable vertical scrolling if items overflow */
+}
+
+.menu-bar-container {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: flex-end; /* Align items to the bottom */
+  align-items: flex-start; /* Align to the left */
+  padding-left: 10px; /* Left padding */
+  gap: 6%; /* Space between items */
+  width: 7%; /* Fixed width for menu bar */
+  height: 88%; /* Set height relative to parent */
+}
+
+.action-squares-container {
+  display: flex; /* Use flexbox */
+  flex-direction: row; /* Arrange items horizontally */
+  justify-content: space-around; /* Distribute items evenly */
+  flex-wrap: wrap; /* Allow items to wrap into rows */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 20px; /* Space between items */
+  width: 93%; /* Take remaining width */
+  height: 100%; /* Fill parent height */
+}

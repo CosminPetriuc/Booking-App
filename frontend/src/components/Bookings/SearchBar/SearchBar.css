@@ -1,0 +1,54 @@
+.search-bar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%; /* Full width of the container */
+  background-color: white;
+  border-radius: 70px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.search-input {
+  flex: 1; /* Input fields take up remaining space */
+  margin: 0 1%; /* Add spacing between inputs */
+  font-size: 1rem;
+  color: #555;
+  padding-left: 1%;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ff80ab; /* Pink border on focus */
+  box-shadow: 0 0 5px rgba(255, 128, 171, 0.5);
+}
+
+.search-button {
+  padding: 1% 1.5%;
+  margin-right: 1%;
+  border: none;
+  border-radius: 100px;
+  background-color: #ff80ab; /* Pink button */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #ff4081; /* Darker pink on hover */
+}
+
+.search-input,
+.search-dates,
+.search-guests {
+  flex: 1; /* Input fields take up remaining space */
+  margin: 0 0.5%; /* Reduce margin between inputs */
+}
+
+.search-bar-container .input-field {
+  background-color: transparent !important; /* Force the background to be transparent */
+  border-radius: 30px;
+  color: #555; /* Text color */
+}

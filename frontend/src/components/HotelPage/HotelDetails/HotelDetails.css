@@ -1,0 +1,221 @@
+.hotel-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.hotel-name {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.hotel-description,
+.hotel-price,
+.hotel-rating {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.images-display {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.main-image-container {
+  flex: 2; /* Take up 2/3 of the space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4; /* Optional: background for contrast */
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  max-height: 400px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.grid-images-container {
+  flex: 1; /* Take up 1/3 of the space */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two images per row */
+  gap: 10px;
+}
+
+.grid-image {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.grid-image:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.hotel-details-wrapper {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fef5f5;
+  border-radius: 10px;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.hotel-info-container {
+  flex: 2;
+  padding-right: 1rem;
+}
+
+.hotel-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.hotel-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.hotel-section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hotel-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.show-more {
+  color: #ff3399;
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.reserve-container {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.price-amount {
+  font-size: 2rem;
+  color: #333;
+}
+
+.booking-dates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.guests-dropdown label {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+.date-picker-container {
+  margin-bottom: 1rem;
+}
+
+.date-picker-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.react-datepicker__input-container {
+  width: 90%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #caa5c1;
+  border-radius: 5px;
+  background-color: transparent !important;
+}
+
+.guests-dropdown {
+  margin-bottom: 1rem;
+}
+
+.guests-dropdown select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.reserve-button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #ff3399;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.reserve-button:hover {
+  background-color: #e02a85;
+}
+
+.booking-summary {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.booking-summary p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.booking-summary p strong {
+  font-weight: bold;
+}
+
+.booking-summary span {
+  font-weight: bold;
+}

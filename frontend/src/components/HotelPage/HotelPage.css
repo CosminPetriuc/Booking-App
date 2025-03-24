@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the viewport height is respected */
+  overflow: hidden; /* Prevent scrolling on the body */
+}
+
+.hotel-page-container {
+  display: flex; /* Use flexbox */
+  width: 100%; /* Take up the full width */
+  height: 100vh; /* 100% of viewport height */
+  flex-direction: row; /* Arrange items horizontally */
+  gap: 5px; /* Space between sections */
+  align-items: center; /* Align items to the top */
+}
+
+.menu-bar-container {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: flex-end; /* Align items to the bottom */
+  align-items: flex-start; /* Align to the left */
+  padding-left: 10px; /* Left padding */
+  gap: 6%; /* Space between items */
+  width: 7%; /* Fixed width for menu bar */
+  height: 88%; /* Set height relative to parent */
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%; /* Take remaining width */
+  height: 90%; /* Fill parent height */
+  padding: 2%; /* Add spacing around content */
+  gap: 2%; /* Space between components */
+  box-sizing: border-box;
+  background: linear-gradient(to bottom right, #f9c6f4, #fce2f9, #f8e6f7);
+  border-radius: 10px;
+}
+
+.search-bar-container {
+  width: 100%; /* Ensure the search bar takes up the full width of the container */
+  margin-bottom: 10px; /* Space between search bar and hotel details */
+}
+
+.hotel-details-wrapper::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}
+
+.hotel-details-wrapper {
+  background-color: white; /* White background for the hotel details container */
+  padding: 20px; /* Padding inside the white background container */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for better visibility */
+  width: 100%; /* Make it take full width inside the details container */
+  height: 90%;
+  overflow-y: auto; /* Enable vertical scrolling if items overflow */
+}

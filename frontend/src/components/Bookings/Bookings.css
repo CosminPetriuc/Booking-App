@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the viewport height is respected */
+  overflow: hidden; /* Prevent scrolling on the body */
+}
+
+.bookings-container {
+  display: flex; /* Use flexbox */
+  width: 100%; /* Take up the full width */
+  height: 100vh; /* 100% of viewport height */
+  flex-direction: row; /* Arrange items horizontally */
+  gap: 5px; /* Space between sections */
+  align-items: center; /* Align items to the top */
+  overflow-y: auto; /* Enable vertical scrolling if items overflow */
+}
+
+.menu-bar-container {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: flex-end; /* Align items to the bottom */
+  align-items: flex-start; /* Align to the left */
+  padding-left: 10px; /* Left padding */
+  gap: 6%; /* Space between items */
+  width: 7%; /* Fixed width for menu bar */
+  height: 88%; /* Set height relative to parent */
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%; /* Take remaining width */
+  height: 90%; /* Fill parent height */
+  padding: 2%; /* Add spacing around content */
+  gap: 2%; /* Space between components */
+  overflow-y: auto; /* Allow vertical scrolling */
+  box-sizing: border-box;
+  background: linear-gradient(to bottom right, #f9c6f4, #fce2f9, #f8e6f7);
+  border-radius: 10px;
+}
